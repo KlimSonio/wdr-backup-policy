@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności: WDR Backup</title>
+<meta name="description" content="Polityka prywatności narzędzia WDR Backup.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="index.html">Strona główna</a><a href="privacy.html">Polityka prywatności</a></nav>
+<h1>Polityka prywatności</h1>
+<p class="meta">WDR Backup &middot; obowiązuje od 7 października 2026</p>
+
+<h2>1. Kim jesteśmy</h2>
+<p>WDR Backup to prywatne narzędzie administracyjne używane wyłącznie przez jego właściciela do tworzenia kopii zapasowych bazy danych. Administratorem narzędzia jest jego właściciel, kontakt: <a href="mailto:maciej.klim.mk@gmail.com">maciej.klim.mk@gmail.com</a>.</p>
+
+<h2>2. Do jakich danych Google ma dostęp narzędzie</h2>
+<p>Narzędzie prosi o jeden zakres Google OAuth: <code>https://www.googleapis.com/auth/drive.file</code>. Pozwala on wyłącznie na tworzenie plików na Dysku Google właściciela oraz odczyt i usuwanie tych plików, które utworzyło samo narzędzie. Narzędzie nie ma dostępu do pozostałych plików, folderów, kontaktów, poczty ani innych danych konta Google.</p>
+
+<h2>3. Jakie dane przechowujemy</h2>
+<ul>
+  <li><strong>Token dostępu OAuth:</strong> przechowywany wyłącznie w pliku konfiguracyjnym na serwerze właściciela, z ograniczonymi uprawnieniami (dostęp tylko dla administratora serwera). Służy do wysyłania kopii na Dysk.</li>
+  <li><strong>Pliki kopii zapasowych:</strong> skompresowane zrzuty bazy danych wewnętrznego systemu rejestracji, zapisywane w folderze na Dysku Google właściciela. Mogą zawierać dane wprowadzone do tego systemu. Nie są publikowane ani udostępniane.</li>
+</ul>
+
+<h2>4. Cel przetwarzania</h2>
+<p>Jedynym celem jest zapewnienie możliwości odtworzenia bazy danych po awarii. Dane nie są używane do reklamy, profilowania, analityki ani żadnych innych celów.</p>
+
+<h2>5. Udostępnianie danych</h2>
+<p>Nie sprzedajemy, nie udostępniamy i nie przekazujemy danych osobom trzecim. Jedynym podmiotem, który przetwarza kopie, jest Google (jako dostawca usługi Dysk Google, na koncie właściciela), na zasadach określonych w jego własnej polityce prywatności. Narzędzie przestrzega zasad <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, w tym wymogów Limited Use.</p>
+
+<h2>6. Przechowywanie i usuwanie</h2>
+<ul>
+  <li>Migawki co 5 minut są usuwane automatycznie po 24 godzinach.</li>
+  <li>Archiwa dobowe są usuwane automatycznie po 30 dniach.</li>
+  <li>Właściciel może w każdej chwili usunąć folder z kopiami z Dysku Google.</li>
+  <li>Dostęp narzędzia można w każdej chwili cofnąć na stronie <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Po cofnięciu narzędzie przestaje mieć dostęp do Dysku.</li>
+</ul>
+
+<h2>7. Bezpieczeństwo</h2>
+<p>Kopie są kompresowane i przesyłane do Google szyfrowanym połączeniem (HTTPS). Pliki robocze na serwerze mają ograniczone uprawnienia dostępu. Dostęp do serwera mają wyłącznie upoważnione osoby.</p>
+
+<h2>8. Prawa osób, których dotyczą dane</h2>
+<p>Osoby, których dane znajdują się w kopiach zapasowych, mogą skontaktować się z administratorem pod adresem podanym wyżej w sprawie dostępu do danych, ich sprostowania lub usunięcia. Usunięcie danych z bazy źródłowej przenosi się na kolejne kopie po ich automatycznej rotacji (do 30 dni).</p>
+
+<h2>9. Zmiany polityki</h2>
+<p>O zmianach poinformujemy, aktualizując tę stronę i datę obowiązywania.</p>
+
+<h2>Privacy policy (summary in English)</h2>
+<p>WDR Backup is a private tool used only by its owner. It requests only the <code>drive.file</code> scope, which lets it create and manage only the files it created itself in the owner's Google Drive. It stores backup files of an internal registration database in the owner's Drive, keeps its OAuth token only on the owner's server, shares no data with third parties, and complies with the Google API Services User Data Policy, including the Limited Use requirements. Snapshots are deleted automatically after 24 hours and daily archives after 30 days. Contact: <a href="mailto:maciej.klim.mk@gmail.com">maciej.klim.mk@gmail.com</a>.</p>
+
+<footer>WDR Backup &middot; ostatnia aktualizacja: 7 października 2026</footer>
+</main>
+</body>
+</html>

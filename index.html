@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WDR Backup</title>
+<meta name="description" content="WDR Backup: narzędzie do automatycznych kopii zapasowych bazy danych, zapisywanych na Dysku Google właściciela.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="index.html">Strona główna</a><a href="privacy.html">Polityka prywatności</a></nav>
+<h1>WDR Backup</h1>
+<p class="meta">Narzędzie do kopii zapasowych &middot; Backup tool</p>
+
+<p>WDR Backup to prywatne narzędzie administracyjne, które co 5 minut tworzy spójną kopię zapasową bazy danych wewnętrznego systemu rejestracji i zapisuje ją na Dysku Google właściciela narzędzia.</p>
+
+<h2>Jak to działa</h2>
+<ul>
+  <li>Skrypt działa na serwerze właściciela i tworzy skompresowany zrzut bazy danych.</li>
+  <li>Zrzut jest wysyłany na Dysk Google właściciela do folderu utworzonego przez to narzędzie.</li>
+  <li>Narzędzie korzysta wyłącznie z zakresu <code>drive.file</code>: ma dostęp tylko do plików, które samo utworzyło, i nie widzi pozostałych plików na Dysku.</li>
+  <li>Starsze kopie są usuwane automatycznie (migawki po 24 godzinach, archiwa dobowe po 30 dniach).</li>
+</ul>
+
+<h2>Dla kogo</h2>
+<p>Narzędzie nie jest usługą publiczną ani produktem dla klientów. Loguje się do niego i używa go wyłącznie jego właściciel (administrator systemu). Nie ma kont użytkowników ani rejestracji.</p>
+
+<h2>Kontakt</h2>
+<p>Pytania dotyczące narzędzia: <a href="mailto:maciej.klim.mk@gmail.com">maciej.klim.mk@gmail.com</a></p>
+
+<h2>In English</h2>
+<p>WDR Backup is a private administration tool that creates a consistent backup of a database every 5 minutes and stores it in the owner's own Google Drive. It uses only the <code>drive.file</code> scope (files created by the tool itself) and is used solely by its owner. See the <a href="privacy.html">privacy policy</a>.</p>
+
+<footer>WDR Backup &middot; ostatnia aktualizacja: 7 października 2026</footer>
+</main>
+</body>
+</html>
